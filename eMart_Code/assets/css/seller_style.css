@@ -255,3 +255,30 @@ table img {
     margin-top: 10px;
   }
 }
+/* ---------- Seller Login Mode ---------- */
+body.login.seller {
+  background: linear-gradient(135deg, #f8cc8a, #efbf77);
+}
+
+body.login.seller .container {
+  max-width: 400px; /* keep same size as client */
+  margin: 80px auto;
+  padding: 25px;
+  background: #fffaf5;
+  border: 1px solid #f8cc8a;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+body.login.seller .container h2 {
+  color: #d35400;
+}
+
+body.login.seller .container button {
+  background: #fca761;
+  color: #fff;
+  border: none;
+}
+
+body.login.seller .container button:hover {
+  background: #fe9855;
+}

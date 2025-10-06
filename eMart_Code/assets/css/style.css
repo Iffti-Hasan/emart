@@ -97,7 +97,7 @@ nav a:hover {
 
 .product-card img {
   width: 100%;
-  height: 260px; /* moderate size */
+  height: 260px;
   object-fit: cover;
   border-bottom: 1px solid #eee;
 }
@@ -116,7 +116,6 @@ nav a:hover {
   margin-bottom: 12px;
 }
 
-/* ---------- Action Buttons (stacked) ---------- */
 .actions {
   display: flex;
   flex-direction: column;
@@ -130,7 +129,6 @@ nav a:hover {
   margin: 0;
 }
 
-/* Keep original button rules for forms inside actions */
 .actions button {
   width: 100%;
   padding: 8px 0;
@@ -163,9 +161,9 @@ nav a:hover {
 }
 
 /* ---------- View / Buy (link styled as button) ---------- */
-/* This ensures <a class="btn-view"> inside .actions looks like the blue button */
+
 .actions a.btn-view {
-  display: block; /* behave like a block button */
+  display: block;
   width: 100%;
   padding: 8px 0;
   border-radius: 4px;
@@ -190,10 +188,10 @@ nav a:hover {
   color: #777;
 }
 header img {
-  height: 36px; /* smaller logo for all headers */
+  height: 36px;
 }
 header h1 {
-  font-size: 18px; /* keep titles consistent */
+  font-size: 18px;
 }
 /* ---------- Cart Table ---------- */
 table {
@@ -257,13 +255,13 @@ a.remove-link:hover {
 }
 
 /* ---------- Checkout (Place Order) container ---------- */
-/* You previously asked to align Place Order to LEFT — that's what's below. */
+
 .checkout-container {
   width: 100%;
-  max-width: 1000px; /* same as table */
+  max-width: 1000px;
   margin: 15px auto 0;
   display: flex;
-  justify-content: flex-start; /* left aligned */
+  justify-content: flex-start;
 }
 
 .checkout-container form {
@@ -286,7 +284,7 @@ a.remove-link:hover {
 }
 
 /* ---------- Auth Forms (Login & Register) ---------- */
-/* Add these so login/register use the same site look (no inline styles required) */
+
 .container {
   max-width: 420px;
   margin: 60px auto;
@@ -353,7 +351,6 @@ a.remove-link:hover {
 }
 /* --------- Login Background Modes --------- */
 
-/* Default client mode = light gradient blue */
 body.client {
   background: linear-gradient(135deg, #e3f2fd, #bbdefb);
   transition: background 0.4s ease-in-out;
@@ -361,7 +358,7 @@ body.client {
 
 /* Seller mode = light gradient orange */
 body.seller {
-  background: linear-gradient(135deg, #f8cc8a, #efbf77);
+  background: linear-gradient(135deg, #f8cc8a, #fbd193);
   transition: background 0.4s ease-in-out;
 }
 
@@ -402,12 +399,12 @@ body.seller {
 .container button:hover {
   background: #0077a8;
 }
+/* --------- Login Background Modes --------- */
 body.client {
-  background: whitesmoke;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  transition: background 0.4s ease-in-out;
 }
-body.seller {
-  background: white;
-}
+
 /* ---------- Feedback Section ---------- */
 .feedback-box {
   background: #fff;
@@ -438,4 +435,13 @@ body.seller {
   background: #0097d1;
   color: #fff;
   transition: background 0.3s ease;
+}
+/* Default: all client pages white */
+body.client {
+  background: #f5f7fa !important;
+}
+
+/* Only login/register stay blue */
+body.client.login {
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb) !important;
 }

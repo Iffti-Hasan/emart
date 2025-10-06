@@ -4,6 +4,7 @@
 <head>
     <title>Login - eMart</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+
     <script>
         function toggleSellerMode() {
             const body = document.body;
