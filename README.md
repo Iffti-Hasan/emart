@@ -25,7 +25,7 @@ The system uses PHP for backend validation and database interaction with MySQL.A
 
 
 <p align="center"><kbd>
-  <img src="https://github.com/Iffti-Hasan/emart/blob/main/emart_SS/login.png" alt="Client Login" width="700" /><br>
+  <img src="https://github.com/Iffti-Hasan/emart/blob/main/emart_SS/client_login.png" alt="Client Login" width="700" /><br>
   <img src="https://github.com/Iffti-Hasan/emart/blob/main/emart_SS/Client_dashboard.png" alt="Client Dashboard" width="700" /><br>
   <img src="https://github.com/Iffti-Hasan/emart/blob/main/emart_SS/search_Client.png" alt="Client Search Box" width="700" /><br>
   <img src="https://github.com/Iffti-Hasan/emart/blob/main/emart_SS/cart_client.png" alt="Cart Page" width="700" /><br>
