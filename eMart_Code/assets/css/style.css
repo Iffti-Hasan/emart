@@ -1,0 +1,441 @@
+/* ---------- Reset ---------- */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+}
+
+/* ---------- Header ---------- */
+header {
+  background: #0097d1;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 20px;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-title img {
+  height: 40px;
+}
+
+.logo-title h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.nav-search {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.nav-search input {
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: none;
+  width: 200px;
+}
+
+.nav-search button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #fff;
+  color: #0097d1;
+  cursor: pointer;
+}
+
+/* ---------- Product Grid ---------- */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 30px;
+  margin: 30px auto;
+  padding: 0;
+  max-width: 1200px;
+}
+
+/* ---------- Product Card ---------- */
+.product-card {
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-bottom: 12px;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: 260px; /* moderate size */
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.product-card h3 {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 12px 0 6px;
+  color: #333;
+}
+
+.product-card .price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 12px;
+}
+
+/* ---------- Action Buttons (stacked) ---------- */
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 0 12px;
+}
+
+.actions form {
+  width: 100%;
+  margin: 0;
+}
+
+/* Keep original button rules for forms inside actions */
+.actions button {
+  width: 100%;
+  padding: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+/* Cart Button */
+.actions .btn-cart {
+  background: #0097d1;
+  color: #fff;
+}
+
+.actions .btn-cart:hover {
+  background: #0077a8;
+}
+
+/* Wishlist Button */
+.actions .btn-wishlist {
+  background: #ff6b6b;
+  color: #fff;
+}
+
+.actions .btn-wishlist:hover {
+  background: #e05656;
+}
+
+/* ---------- View / Buy (link styled as button) ---------- */
+/* This ensures <a class="btn-view"> inside .actions looks like the blue button */
+.actions a.btn-view {
+  display: block; /* behave like a block button */
+  width: 100%;
+  padding: 8px 0;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  background: #0097d1;
+  color: #fff;
+  transition: background 0.3s ease;
+}
+
+.actions a.btn-view:hover {
+  background: #0077a8;
+}
+
+/* ---------- Empty message ---------- */
+.empty-message {
+  text-align: center;
+  font-size: 16px;
+  margin: 40px 0;
+  color: #777;
+}
+header img {
+  height: 36px; /* smaller logo for all headers */
+}
+header h1 {
+  font-size: 18px; /* keep titles consistent */
+}
+/* ---------- Cart Table ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px auto;
+  max-width: 1000px;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+  font-size: 14px;
+}
+
+table th {
+  background: #0097d1;
+  color: #fff;
+  font-weight: 600;
+}
+
+table tr:last-child td {
+  border-bottom: none;
+}
+
+table tr:hover {
+  background: #f9f9f9;
+}
+
+/* Cart page buttons */
+table button,
+form button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  background: #0097d1;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+table button:hover,
+form button:hover {
+  background: #0077a8;
+}
+
+a.remove-link {
+  color: #ff6b6b;
+  text-decoration: none;
+}
+
+a.remove-link:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Checkout (Place Order) container ---------- */
+/* You previously asked to align Place Order to LEFT — that's what's below. */
+.checkout-container {
+  width: 100%;
+  max-width: 1000px; /* same as table */
+  margin: 15px auto 0;
+  display: flex;
+  justify-content: flex-start; /* left aligned */
+}
+
+.checkout-container form {
+  margin: 0;
+}
+
+.checkout-container button {
+  padding: 8px 16px;
+  font-size: 14px;
+  background: #0097d1;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.checkout-container button:hover {
+  background: #0077a8;
+}
+
+/* ---------- Auth Forms (Login & Register) ---------- */
+/* Add these so login/register use the same site look (no inline styles required) */
+.container {
+  max-width: 420px;
+  margin: 60px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.container img {
+  height: 60px;
+  margin-bottom: 12px;
+}
+
+.container h2 {
+  margin: 0 0 18px 0;
+  color: #0097d1;
+}
+
+.container form input[type="text"],
+.container form input[type="email"],
+.container form input[type="password"],
+.container form input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.container form label {
+  display: block;
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.container form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #0097d1;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.container form button:hover {
+  background: #0077a8;
+}
+
+.container p {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.container a {
+  color: #0097d1;
+  text-decoration: none;
+}
+/* --------- Login Background Modes --------- */
+
+/* Default client mode = light gradient blue */
+body.client {
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  transition: background 0.4s ease-in-out;
+}
+
+/* Seller mode = light gradient orange */
+body.seller {
+  background: linear-gradient(135deg, #f8cc8a, #efbf77);
+  transition: background 0.4s ease-in-out;
+}
+
+/* Center login/register box */
+.container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.container h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+.container input,
+.container button {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.container button {
+  background: #0097d1;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.container button:hover {
+  background: #0077a8;
+}
+body.client {
+  background: whitesmoke;
+}
+body.seller {
+  background: white;
+}
+/* ---------- Feedback Section ---------- */
+.feedback-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-box strong {
+  color: #333;
+}
+
+.feedback-box small {
+  color: #777;
+  font-size: 12px;
+}
+.actions a.btn-view {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  background: #0097d1;
+  color: #fff;
+  transition: background 0.3s ease;
+}
