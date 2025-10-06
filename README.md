@@ -5,6 +5,8 @@
 American International University-Bangladesh (AIUB).It demonstrates core online shopping features like browsing, cart management and order tracking.
 The system uses PHP for backend validation and database interaction with MySQL.As a beginner-level project, it currently has multiple vulnerabilities and limited security, but I plan to make it smarter and more secure in future updates.*
 
+**You can watch the demo of this project here:** [Watch Full Video](https://drive.google.com/file/d/1HjU4_oqgP007F9X0soGTdiHvOCA4Fysc/view?usp=sharing)
+
 ***<h4>🧩 Technology Stack</h4>***
 - **Frontend:** HTML5, CSS3
 - **Backend:** PHP
